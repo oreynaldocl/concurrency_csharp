@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace ThreadPoolDemo
 {
@@ -11,7 +7,15 @@ namespace ThreadPoolDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Thread.CurrentThread.IsThreadPoolThread);
+            int workerThreads = 0;
+            int completitionPortThreads = 0;
+            ThreadPool.GetMinThreads(out workerThreads, out completitionPortThreads);
+
+            int processCount = Environment.ProcessorCount;
+            Console.WriteLine($"Process: {processCount} ThreadPool?:{Thread.CurrentThread.IsThreadPoolThread}");
+            Console.WriteLine($"MinWorkThread: {workerThreads} MinCompletition: {completitionPortThreads}");
+            ThreadPool.GetMaxThreads(out workerThreads, out completitionPortThreads);
+            Console.WriteLine($"MaxWorkThread: {workerThreads} MaxCompletition: {completitionPortThreads}");
 
             Employee employee = new Employee() { Name = "Oscar", CompanyName = "Owner" };
             ThreadPool.QueueUserWorkItem(
