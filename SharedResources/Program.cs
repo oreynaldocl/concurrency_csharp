@@ -6,6 +6,7 @@ namespace SharedResources
     internal class Program
     {
         private static bool isCompleted = false;
+        static readonly object lockCompleted = new object();
 
         static void Main(string[] args)
         {
@@ -18,11 +19,14 @@ namespace SharedResources
 
         private static void HelloWorld()
         {
-            if (!isCompleted)
+            lock (lockCompleted)
             {
-                // Log repeated twice because for each thread the `isCompleted` is false.
-                Console.WriteLine("Hello World should print only once.");
-                isCompleted = true;
+                if (!isCompleted)
+                {
+                    // isCompleted = true; // Adding here log once, but probably it can be reached by one ghread
+                    Console.WriteLine($"Hello World should print only once.");
+                    isCompleted = true;
+                }
             }
         }
     }
