@@ -12,8 +12,14 @@ Static properties methods thread safe? https://www.linkedin.com/learning/advance
 ## Thread Affinity
 ![Thread Affinity](./images/ThreadAffinity.png)
 
-Special methods that allows to access to some resource. e.g.: In WPF use of Dispatcher to update UI
+Special methods that allows to access to some resource. e.g.: In WPF use of Dispatcher to update UI. But user doesn't require a lock over UI
 ```csharp
 // txtMessage.Text = "Update value content"; // FAILS, it is not in dispachter context
-Dispatcher.Invoke(() => txtMessage.Text = "Update value content";); // WORKS, and it is not required to lock the UI.
+Dispatcher.Invoke(() => txtMessage.Text = "Update value content";); // WORKS
 ```
+
+## One Way Signaling
+Way to block a process indefinetely until we call manually an event.
+
+## Manual reset event
+To have more control in which moment we need to block the event

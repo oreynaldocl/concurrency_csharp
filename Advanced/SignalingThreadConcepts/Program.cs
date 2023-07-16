@@ -10,7 +10,9 @@ namespace SignalingThreadConcepts
 
             //AutoEventExample.Start();
 
-            TwoWaySignaling.Start();
+            //TwoWaySignaling.Start();
+
+            ManualResetEventExample.Start();
 
             Console.ReadKey();
         }
