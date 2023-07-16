@@ -8,7 +8,9 @@ namespace SignalingThreadConcepts
         {
             //ThreadSafety.Start();
 
-            AutoEventExample.Start();
+            //AutoEventExample.Start();
+
+            TwoWaySignaling.Start();
 
             Console.ReadKey();
         }
