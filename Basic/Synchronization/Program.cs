@@ -15,7 +15,9 @@ namespace Synchronization
 
             //ReadWriterLock.Start();
 
-            MutexExample.Start();
+            //MutexExample.Start();
+
+            SemaphoreExample.Start();
 
             Console.ReadKey();
         }
