@@ -13,7 +13,9 @@ namespace Synchronization
             //Deadlock.GenerateNotDeadLock();
             //Deadlock.GenerateDeadLock();
 
-            ReadWriterLock.Start();
+            //ReadWriterLock.Start();
+
+            MutexExample.Start();
 
             Console.ReadKey();
         }

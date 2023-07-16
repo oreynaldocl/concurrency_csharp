@@ -46,6 +46,7 @@
     <Compile Include="Deadlock.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="MonitorAccount.cs" />
+    <Compile Include="MutexExample.cs" />
     <Compile Include="NestedLocks.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
