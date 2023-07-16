@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoEventExample.cs" />
+    <Compile Include="CountdownExample.cs" />
     <Compile Include="ManualResetEventExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
