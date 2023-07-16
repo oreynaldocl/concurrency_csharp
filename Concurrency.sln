@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinBackground", "JoinBackg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{3EC0D9A6-490A-4755-8115-4AF55F121A88}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tasks", "Tasks", "{E7B6D5D9-7D10-4801-BC6C-FA746B3A877B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskDemo", "TaskDemo\TaskDemo.csproj", "{1D52BB80-6A09-4EE0-96E6-BA07380C5D50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,9 +49,16 @@ Global
 		{3EC0D9A6-490A-4755-8115-4AF55F121A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EC0D9A6-490A-4755-8115-4AF55F121A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EC0D9A6-490A-4755-8115-4AF55F121A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D52BB80-6A09-4EE0-96E6-BA07380C5D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D52BB80-6A09-4EE0-96E6-BA07380C5D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D52BB80-6A09-4EE0-96E6-BA07380C5D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D52BB80-6A09-4EE0-96E6-BA07380C5D50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D52BB80-6A09-4EE0-96E6-BA07380C5D50} = {E7B6D5D9-7D10-4801-BC6C-FA746B3A877B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {70B9FAF7-AA0B-4EA0-833B-4947EC3FDE99}
