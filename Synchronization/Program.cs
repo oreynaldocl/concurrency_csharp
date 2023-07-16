@@ -9,8 +9,11 @@ namespace Synchronization
         static void Main(string[] args)
         {
             //UseMonitor();
+
             //Deadlock.GenerateNotDeadLock();
-            Deadlock.GenerateDeadLock();
+            //Deadlock.GenerateDeadLock();
+
+            ReadWriterLock.Start();
 
             Console.ReadKey();
         }
