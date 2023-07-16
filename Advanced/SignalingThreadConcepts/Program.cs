@@ -6,7 +6,9 @@ namespace SignalingThreadConcepts
     {
         static void Main(string[] args)
         {
-            ThreadSafety.Start();
+            //ThreadSafety.Start();
+
+            AutoEventExample.Start();
 
             Console.ReadKey();
         }
